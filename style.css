@@ -1,0 +1,103 @@
+body{
+   background-size: cover;
+   background-repeat:no-repeat; 
+   color: black !important;
+}
+.Weather_input_container{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+#Weather_Logo{
+    object-fit: contain;
+    border-radius: 10px;
+    width: auto;
+    height: 65px;
+    
+}
+#current_weather{
+    backdrop-filter: blur(4px);
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding-right: 10px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+#CityName_input{
+    text-align: center;
+    width: 12rem;
+    height: 1.3rem;
+    border: 1px solid black;
+    border-radius: 3px;
+    padding-bottom: 0;
+}
+#getWeather_btn{
+    text-align: center;
+    font-size: 10px;
+    color: black !important;
+    background:transparent;
+    border: 1px solid black;
+    border-radius: 8px;
+    height:fit-content;
+
+}
+#getWeather_btn:hover{
+   transform: scale(1.2);
+   background-color: white;
+   font-weight: bold; 
+}
+#getWeather_btn:active{
+   transform:scale(1);
+}
+
+h3{
+    text-align: center;
+}
+#Weather_of_nextDays{
+    display:flex;
+    overflow: auto;
+    white-space: nowrap;
+}
+.forecast-day{
+    backdrop-filter:blur(4px);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 14.5px;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 16px;
+    min-width: 10rem;
+    min-height: auto;
+    align-items: center;
+    flex-wrap: wrap;
+    image{
+        object-fit: contain;
+    }
+    
+}
+#weather_of_selected_dates{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+@media only screen and (max-width <= 437px){
+    #weather_Logo{
+     padding: auto;
+    }
+.Weather_input_container{
+    width: 100%;
+    gap:1px;
+}
+#CityName_input{
+width: 11rem;
+}
+body{
+    background-attachment: fixed;
+    background-size: cover;
+}
+}

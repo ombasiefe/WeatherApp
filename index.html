@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="scripst.js"></script>
+    <title>Weather App</title>
+</head>
+
+<body>
+    <div class="Weather_input_container">
+        <div style="display: flex; font-size: 15px; object-fit: cover; flex-direction: column; ">
+            <img src="weather_Logo.png" style="width: auto; height: 35px;" id="Weather_Logo" alt="Weather_App">
+            <h1 style="font-size: 19px;"> Weather_App </h1>
+        </div>
+        <div style="display: flex; justify-content: space-around; margin-top: 31px; gap: 10px;"><input type="text"
+                id="CityName_input" placeholder="enter the city name:" required>
+            <button onclick="getWeather(),getWeather_of_Days()" id="getWeather_btn"><img src="search_icon.svg"
+                    alt=""></button>
+        </div>
+    </div>
+    <br>
+    <div id="WeatherResult"></div><br>
+    <h3>Next Days Forecast:</h3> <br><br>
+    <div id="Weather_of_nextDays"></div><br>
+</body>
+
+</html>
