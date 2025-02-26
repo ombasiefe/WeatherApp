@@ -60,7 +60,7 @@ async function getWeather_of_Days() {
         alert("please enter a city name !");
         return;
     }
-    const urlNextDays = `http://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${city}&days=7&aqi=no&alerts=no`;
+    const urlNextDays = `https://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${city}&days=7&aqi=no&alerts=no`;
     try {
         const days_response = await fetch(urlNextDays);
         const days_data = await days_response.json();
